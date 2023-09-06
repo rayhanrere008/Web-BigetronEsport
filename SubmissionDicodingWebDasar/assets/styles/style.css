@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+   
+h2, h3 {
+    color: #FF0000;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #950101;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#about p{
+  color: white;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#division p{
+  color: white;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#news p{
+  color: white;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#sponsors p{
+  color: white;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgb(149, 1, 1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.jumbotron {
+  font-size: 40px;
+  text-shadow: 3px 2px 1px black;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  background-image: url('../../assets/image/btr-jumbotron.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center;
+  height: 100vh;
+}
+
+.jumbotron p{
+  font-style: italic;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #950101;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+  color: white;
+}
+aside p{
+  font-family: sans-serif;
+}
+
+aside section{
+  font-family: sans-serif;
+}
+
+header {
+  display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
